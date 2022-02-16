@@ -1,0 +1,9 @@
+<div class="container">
+<h1>Restaurants List</h1>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li class = "card-body border border-success"><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+  <% end %>
+</ul>
+</div>
